@@ -8,6 +8,9 @@ function handleSubmit(){
     if (number < 0){
       return alert("Silly human! We can't show you negative doggos!")
     }
+    if (number === 0){
+      return alert("Zero doggos?? Somewhere out there you've made a doggo very sad.")
+    }
     else{
       getDogPics(number);
     }
