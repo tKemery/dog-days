@@ -2,7 +2,15 @@ function handleSubmit(){
   $('form').submit(event => {
     event.preventDefault();
     let number = document.getElementById('number').value;
-    getDogPics(number);
+    if (number > 50){
+      return alert("Unfortunately, we can only show you 50 doggos at a time. Please retry with a number between 1 and 50.")
+    }
+    if (number < 0){
+      return alert("Silly human! We can't show you negative doggos!")
+    }
+    else{
+      getDogPics(number);
+    }
   });
 }
   
