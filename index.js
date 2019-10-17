@@ -5,11 +5,8 @@ function handleSubmit(){
     if (number > 50){
       return alert("Unfortunately, we can only show you 50 doggos at a time. Please retry with a number between 1 and 50.")
     }
-    if (number < 0){
+    if (number <= 0){
       return alert("Silly human! We can't show you negative doggos!")
-    }
-    if (number === 0){
-      return alert("Zero doggos?? Somewhere out there you've made a doggo very sad.")
     }
     else{
       getDogPics(number);
