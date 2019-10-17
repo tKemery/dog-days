@@ -26,10 +26,7 @@ function displayResults(responseJson){
       $('.container').append(`<img src='${item}' width='300px'>`)
   });
 }
-// function displayResults(responseJson){
-//     $('img').attr('src', `${responseJson.message}`);
-// }
-  
+
 $(function(){
   handleSubmit();
   console.log('App Successfully Loaded');
